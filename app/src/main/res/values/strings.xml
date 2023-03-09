@@ -1,0 +1,15 @@
+<resources>
+	<string name="app_name">TVCast</string>
+
+	<string name="video_id_field_hint">Video ID or URL</string>
+	<string name="found_devices_label_text">Found devices:</string>
+	<string name="refresh_button_text">Refresh</string>
+
+	<string name="error_no_connection">Wi-Fi connection is required</string>
+	<string name="error_cannot_extract_video_id">Unable to extract video ID</string>
+	<string name="error_shared_url_not_supported">Unsupported URL</string>
+
+	<string name="msg_exception_occurred">Exception occurred: %s</string>
+	<string name="msg_video_sent">Video sent successfully</string>
+	<string name="msg_request_failed_http_code">Request failed with error HTTP %d</string>
+</resources>

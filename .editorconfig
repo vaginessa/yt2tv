@@ -1,0 +1,13 @@
+root = true
+
+[**]
+charset = utf-8
+indent_style = tab
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# that's what IntelliJ uses by default - it refuses to use different indentation, so let's avoid
+# cluttering the workspace
+[.idea/**.xml]
+indent_style = space
+indent_size = 2
