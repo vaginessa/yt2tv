@@ -14,7 +14,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.gardockt.tvcast.protocols.dial.DialRequestExecutor;
@@ -26,7 +25,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-	private TextView logLabel;
 	private EditText videoIdField;
 	private ListView foundDevicesListView;
 	private ArrayAdapter<DialDevice> foundDevicesListAdapter;
@@ -40,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		logLabel = findViewById(R.id.logLabel);
 		videoIdField = findViewById(R.id.videoIdField);
 		foundDevicesListView = findViewById(R.id.foundDevicesListView);
 		refreshDevicesSpinner = findViewById(R.id.refreshDevicesSpinner);
@@ -166,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
 	}
 
 	public void log(String text) {
-		logLabel.append(text + "\n");
+		System.out.println(text);
 	}
 
 }
